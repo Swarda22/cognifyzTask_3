@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            /* Adjusted width to accommodate both elements */
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #e0c6ee;
+        }
+
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            width: 100%;
+            color: black;
+        }
+
+        .custom-button {
+            background: #f5f3f3;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            background: linear-gradient(45deg, #8967d9, #9f64b9);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background: linear-gradient(45deg, #cc0074, #6600ff);
+        }
+
+        .gif-container {
+            width: 400px;
+            /* Adjusted width */
+            margin: auto;
+            /* Center alignment */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="form-title">Login Form</h1>
+        <form class="row g-3" action="/submit" method="POST">
+            <div class="col-md-6">
+                <label for="inputEmail4" data-bs-theme="dark" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" name="email" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="Address" name="Address" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="City" name="City" required>
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select" id="State" name="State" required>
+                    <option selected>select</option>
+                    <option>Maharashtra</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="zipCode" name="zipCode" required>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary custom-button">Sign in</button>
+            </div>
+        </form>
+
+
+
+
+
+    </div>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
